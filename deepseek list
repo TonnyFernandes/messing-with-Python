@@ -1,0 +1,137 @@
+Beginner Exercises
+    Basic Syntax and Data Types
+
+        DONE Write a program that takes a user's name and age as input and prints a greeting message.
+
+        DONE Create a program that converts temperature from Celsius to Fahrenheit.
+
+        DONE Write a script that calculates the area of a circle given its radius.
+
+    Conditionals and Loops
+
+        DONE Write a program that checks if a number is even or odd.
+
+        DONE Create a program that prints the first 10 numbers in the Fibonacci sequence.
+
+        DONE Write a script that prints all prime numbers between 1 and 100.
+
+    Lists and Strings
+
+        Write a program that reverses a string.
+
+        Create a script that finds the largest number in a list.
+
+        Write a program that removes duplicates from a list.
+
+    Functions
+
+        Write a function that takes a list of numbers and returns the sum.
+
+        Create a function that checks if a string is a palindrome.
+
+        Write a function that calculates the factorial of a number.
+
+    Intermediate Exercises
+    File Handling
+
+        Write a program that reads a text file and counts the number of words.
+
+        Create a script that writes user input to a file and then reads it back.
+
+        Write a program that appends data to an existing CSV file.
+
+    Dictionaries and Sets
+
+        Write a program that counts the frequency of each word in a text file.
+
+        Create a script that finds the intersection of two lists using sets.
+
+        Write a program that simulates a simple dictionary (word lookup).
+
+    Error Handling
+
+        Write a program that handles division by zero gracefully.
+
+        Create a script that asks for user input and handles invalid inputs (e.g., non-numeric values).
+
+        Write a function that retries an operation if it fails (e.g., connecting to a server).
+
+    Object-Oriented Programming (OOP)
+
+        Create a Car class with attributes like make, model, and year, and methods like start and stop.
+
+        Write a BankAccount class with methods to deposit, withdraw, and check balance.
+
+        Create a Student class that stores grades and calculates the average.
+
+Advanced Exercises
+    Algorithms and Data Structures
+
+        Implement a binary search algorithm.
+
+        Write a program to sort a list using the bubble sort or merge sort algorithm.
+
+        Create a script that implements a stack or queue using Python lists.
+
+    Modules and Libraries
+
+        Use the math module to calculate the square root of a number.
+
+        Write a program that uses the datetime module to display the current date and time.
+
+        Use the random module to simulate a dice roll.
+
+    APIs and Web Scraping
+
+        Write a script that fetches data from a public API (e.g., weather data) and displays it.
+
+        Use the requests library to scrape data from a website (e.g., headlines from a news site).
+
+        Create a program that sends an email using the smtplib library.
+
+    Data Analysis
+
+        Use the pandas library to read a CSV file and calculate basic statistics (mean, median, etc.).
+
+        Write a script that visualizes data using the matplotlib or seaborn library.
+
+        Create a program that cleans and preprocesses a dataset (e.g., handling missing values).
+
+    Testing
+
+        Write unit tests for a function using the unittest module.
+
+        Use pytest to test a small Python script.
+
+        Create a test suite for a class or module.
+
+Project-Based Exercises
+    Build a To-Do List App
+
+        Create a command-line to-do list manager that allows users to add, delete, and view tasks.
+
+        Add features like saving tasks to a file and marking tasks as completed.
+
+    Create a Calculator
+
+        Build a simple calculator that supports addition, subtraction, multiplication, and division.
+
+        Extend it to handle more complex operations like exponents and square roots.
+
+    Develop a Text-Based Game
+
+        Write a text-based adventure game where the user makes choices to progress through the story.
+
+        Add features like inventory management and character stats.
+
+    Build a Web Scraper
+
+        Create a script that scrapes data from a website and saves it to a CSV file.
+
+        Add functionality to scrape multiple pages and handle pagination.
+
+    Create a Flask/Django App
+
+        Build a simple web application using Flask or Django (e.g., a blog or portfolio site).
+
+        Add features like user authentication and database integration.
