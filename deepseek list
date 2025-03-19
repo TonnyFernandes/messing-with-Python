@@ -25,11 +25,11 @@ Beginner Exercises
 
     Functions
 
-        Write a function that takes a list of numbers and returns the sum.
+        DONE Write a function that takes a list of numbers and returns the sum.
 
-        Create a function that checks if a string is a palindrome.
+        DONE Create a function that checks if a string is a palindrome.
 
-        Write a function that calculates the factorial of a number.
+        DONE Write a function that calculates the factorial of a number.
 
     Intermediate Exercises
     File Handling
