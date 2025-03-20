@@ -34,9 +34,9 @@ Beginner Exercises
 Intermediate Exercises
     File Handling
 
-        Write a program that reads a text file and counts the number of words.
+        DONE Write a program that reads a text file and counts the number of words.
 
-        Create a script that writes user input to a file and then reads it back.
+        DONE Create a script that writes user input to a file and then reads it back.
 
         Write a program that appends data to an existing CSV file.
 
@@ -110,28 +110,28 @@ Project-Based Exercises
 
         Create a command-line to-do list manager that allows users to add, delete, and view tasks.
 
-        Add features like saving tasks to a file and marking tasks as completed.
+            Add features like saving tasks to a file and marking tasks as completed.
 
     Create a Calculator
 
         Build a simple calculator that supports addition, subtraction, multiplication, and division.
 
-        Extend it to handle more complex operations like exponents and square roots.
+            Extend it to handle more complex operations like exponents and square roots.
 
     Develop a Text-Based Game
 
         Write a text-based adventure game where the user makes choices to progress through the story.
 
-        Add features like inventory management and character stats.
+            Add features like inventory management and character stats.
 
     Build a Web Scraper
 
         Create a script that scrapes data from a website and saves it to a CSV file.
 
-        Add functionality to scrape multiple pages and handle pagination.
+            Add functionality to scrape multiple pages and handle pagination.
 
     Create a Flask/Django App
 
         Build a simple web application using Flask or Django (e.g., a blog or portfolio site).
 
-        Add features like user authentication and database integration.
+            Add features like user authentication and database integration.
