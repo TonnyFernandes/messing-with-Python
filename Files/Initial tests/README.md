@@ -5,13 +5,14 @@ All I did differently was to ask DeepSeek on why I couldn't read/write my files.
 
 import os
 
-script_dir = os.path.dirname(os.path.abspath(\_\_file\_\_))
-file_path = os.path.join(script_dir, 'file.txt')
+- script_dir = os.path.dirname(os.path.abspath(\_\_file\_\_))
+- file_path = os.path.join(script_dir, 'file.txt')
 
-try:
-    with open(file_path, 'r') as f:
-        # Insert code here
-except FileNotFoundError:
-    print(f"The file '{file_path}' was not found.")
-except Exception as e:
-    print(f'An error has occurred: {e}')
+- try:
+    -    with open(file_path, 'r') as f:
+
+~~Insert code here~~
+- except FileNotFoundError:
+    -    print(f"The file '{file_path}' was not found.")
+- except Exception as e:
+    -    print(f'An error has occurred: {e}')
