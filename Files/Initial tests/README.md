@@ -5,7 +5,7 @@ All I did differently was to ask DeepSeek on why I couldn't read/write my files.
 
 import os
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.abspath(\_\_file\_\_))
 file_path = os.path.join(script_dir, 'file.txt')
 
 try:
