@@ -4,6 +4,6 @@ def fire(n, c=1):
     print(' '*(c-1)+'*'*(2*(n-c)+1))
     fire(n, c+1)
 
-print('Source: https://www.youtube.com/watch?v=EFmxPMdBqmU')
+# Source: https://www.youtube.com/watch?v=EFmxPMdBqmU
 f = int(input('Type an intenger: '))
 fire(f)

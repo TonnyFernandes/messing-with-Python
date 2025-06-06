@@ -4,9 +4,8 @@ def factorial(n):
     return factorial(n - 1) * n
 
 while True:
-    n = input('Enter a number: ')
-    print(factorial(int(n)))
+    n = int(input('Enter a number: '))
     if n >= 1:
+        print(factorial(int(n)))
         break
-    else:
-        print('The input must be a positive number')
+    print('The input must be a positive number')
