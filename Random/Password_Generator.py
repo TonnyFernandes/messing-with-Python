@@ -1,53 +1,66 @@
-from random import choice, randint
+from random import choice, shuffle
 import string
 
-def password_generator() -> str:
+def password_generator(
+    PASS_LENGHT: int = 16,
+    include_lowercase: bool = True,
+    include_uppercase: bool = True,
+    include_number: bool = True,
+    include_symbol: bool = True
+) -> str:
+    """Generate a password within the specified rules. The rules have a default state but, when calling the function, it is possible to change them to a certain degree. 
+
+    Args:
+        PASS_LENGHT: desired lenght of the password (default: 16)
+        include_lowercase: if password include a lowercase character (default: true)
+        include_uppercase: if password include a uppercase character (default: true)
+        include_number: if password include a number character (default: true)
+        include_symbol: if password include a special character (default: true)
+    
+    Return:
+        Generated password
+    
+    Raises:
+        ValueError: If no character list is selected or PASS_LENGHT is lesser than 6
+    """
+    
     # # # CONSTANTS # # #
-    LOWER = list(string.ascii_lowercase)
-    UPPER = list(string.ascii_uppercase)
-    NUMBER = list('0123456789')
-    SYMBOL = list('@#$%&*,.-;:_+')
-    BOOL = [True, False]
+    LOWER = list(string.ascii_lowercase) if include_lowercase else []
+    UPPER = list(string.ascii_uppercase) if include_uppercase else []
+    NUMBER = list(string.digits) if include_number else []
+    SYMBOL = list(string.punctuation) if include_symbol else []
+    ALL_CHAR = LOWER + UPPER + NUMBER + SYMBOL
 
-    # # # Defining possible characters to enter the password, plus its lenght # # #
-    HAS_LOWER = choice(BOOL)
-    HAS_UPPER = choice(BOOL)
-    HAS_NUMBER = choice(BOOL)
-    HAS_SYMBOL = choice(BOOL)
-    while not HAS_LOWER and not HAS_UPPER and not HAS_NUMBER and not HAS_SYMBOL:
-        HAS_LOWER = choice(BOOL)
-        HAS_UPPER = choice(BOOL)
-        HAS_NUMBER = choice(BOOL)
-        HAS_SYMBOL = choice(BOOL)
-    PASS_LENGHT = randint(8, 16)
-
-    POSSIBLE_GROUPS = []
-    if HAS_LOWER:
-        POSSIBLE_GROUPS.append(1)
-    if HAS_UPPER:
-        POSSIBLE_GROUPS.append(2)
-    if HAS_NUMBER:
-        POSSIBLE_GROUPS.append(3)
-    if HAS_SYMBOL:
-        POSSIBLE_GROUPS.append(4)
+    # # # ValueError # # #
+    if PASS_LENGHT < 6:
+        raise ValueError('Password lenght must be at least 6')
+    if not ALL_CHAR:
+        raise ValueError('At least one group of characters must be selected')
 
     # # # Generating the password # # #
-    password = ''
+    password = []
     i = 0
-    while i < PASS_LENGHT:  
-        character = choice(POSSIBLE_GROUPS)
-        match(character):
-            case 1:
-                password += choice(LOWER)
-            case 2:
-                password += choice(UPPER)
-            case 3:
-                password += choice(NUMBER)
-            case 4:
-                password += choice(SYMBOL)
+    # Ensuring one character of each possible list enters the password
+    if include_lowercase:
+        password.append(choice(LOWER))
         i += 1
-    
-    return password
+    if include_uppercase:
+        password.append(choice(UPPER))
+        i += 1
+    if include_number:
+        password.append(choice(NUMBER))
+        i += 1
+    if include_symbol:
+        password.append(choice(SYMBOL))
+        i += 1
+    # Filling the rest of the password
+    while i < PASS_LENGHT:  
+        password.append(choice(ALL_CHAR))
+        i += 1
+    # Shuffling the password to ensure randomness
+    shuffle(password)
+
+    return ''.join(password)
 
 # # # If running this file directly, print a password on the terminal # # #
 if __name__ == "__main__":
